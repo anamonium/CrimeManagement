@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="default">
+
+        <class>entity.CriminalChargesEntity</class>
+        <class>entity.AccidentReportEntity</class>
+        <class>entity.AccidentTypeEntity</class>
+        <class>entity.AccidentVehiclesEntity</class>
+        <class>entity.AddressEntity</class>
+        <class>entity.ArrestReportEntity</class>
+        <class>entity.ArrestedPersonEntity</class>
+        <class>entity.CountryEntity</class>
+        <class>entity.CrimeReportEntity</class>
+        <class>entity.CrimeWitnessesEntity</class>
+        <class>entity.OfficerEntity</class>
+        <class>entity.PersonEntity</class>
+        <class>entity.ReportEntity</class>
+        <class>entity.StateEntity</class>
+        <class>entity.VehicleEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mariadb://localhost:3306/crimeManagament-TOProject"/>
+            <property name="hibernate.connection.driver_class" value="org.mariadb.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="root"/>
+        </properties>
+    </persistence-unit>
+</persistence>
